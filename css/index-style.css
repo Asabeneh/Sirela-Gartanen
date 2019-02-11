@@ -1,4 +1,9 @@
 /* ===GENERAL=== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -71,6 +76,40 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 0 10%;
+  grid-gap: 20px;
+  width: 80%;
+  grid-template-areas:
+    "item1" "item2" "item3"
+    "item4" "item5" "item6";
+}
+
+.photo-item {
+  widows: 360px;
+  height: 360px;
+  background-color: pink;
+}
+main h4 {
+  font-family: "AvenirNextLTPro-Medium", Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin-bottom: 36px;
+  padding-top: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+main .button {
+  font-family: "AvenirNextLTPro-Medium", Helvetica, Arial, sans-serif;
+  color: #051421;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-bottom: 0;
+  padding: 20px 30px 18px 30px;
+  background-color: #81d4f1;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-align: center;
+  width: 250px;
+  margin: auto;
 }
 
 /* ===FOOTER=== */
