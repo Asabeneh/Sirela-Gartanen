@@ -7,6 +7,9 @@
 
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -23,25 +26,26 @@
   --blue-superdark: #020e13;
 }
 
-
 body {
   background: var(--background-blue);
 }
-
 
 h1 {
   /* Sirela Gartanen */
   color: white;
   font-size: 80px;
   text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  margin-top: 50px;
 }
 
 h2 {
   color: var(--blue-medium);
   font-size: 64px;
   text-align: center;
-  font-weight: 100;
-=======
+  font-weight: 10;
+  font-family: "Open Sans Condensed", sans-serif;
 }
 
 #thumbnail-title {
@@ -117,7 +121,6 @@ main .button {
 }
 
 /* ===FOOTER=== */
-
 
 /* ===FOOTER=== */
 
