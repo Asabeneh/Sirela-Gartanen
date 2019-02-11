@@ -18,9 +18,11 @@
   --blue-superdark: #020e13;
 }
 
+
 body {
   background: var(--background-blue);
 }
+
 
 h1 {
   /* Sirela Gartanen */
@@ -33,6 +35,8 @@ h2 {
   color: var(--blue-medium);
   font-size: 64px;
   text-align: center;
+  font-weight: 100;
+=======
 }
 
 #thumbnail-title {
@@ -66,6 +70,9 @@ main {
   background: var(--background-blue);
   height: 100%;
 }
+/* ===FOOTER=== */
+
+
 /* ===FOOTER=== */
 
 footer {
