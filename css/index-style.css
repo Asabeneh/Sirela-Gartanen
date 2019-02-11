@@ -58,5 +58,8 @@ p {
 /* ===HEADER=== */
 
 /* ===MAIN=== */
-
+main {
+  background: var(--background-blue);
+  height: 100%;
+}
 /* ===FOOTER=== */
