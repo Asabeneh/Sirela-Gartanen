@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -14,11 +15,16 @@
   --thumbnail-orange: #d85f19;
   --thumbnail-blue: #3aa2d9;
   --thumbnail-turquoise: #23ac8c;
-  --background-blue: #082a3a;
-  --blue-light: #a4d2e6; /* for the links hover */
-  --blue-medium: #60b0d4; /* for footer, email button default, and h2*/
-  --blue-dark: #1c8fc2; /* for footer, social media icons default, and email button hover */
-  --blue-superdark: #020e13;
+  --background-blue: #0c333e;
+  --blue-light: #7ecce2; /* for footer, email button default, and h2*/
+  --blue-medium: #2499bb; /* for footer links hover */
+  --blue-dark: #145568; /* for footer, footer links default, and email button hover */
+  --blue-superdark: #041114;
+}
+
+html {
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -26,30 +32,28 @@ body {
 }
 
 h1 {
-  /* Sirela Gartanen */
   color: white;
   font-size: 80px;
   text-align: center;
-
-  font-weight: 400;
   margin-top: 250px;
+  font-weight: 100;
 }
 
 h2 {
-  color: var(--blue-medium);
+  color: var(--blue-light);
   font-size: 64px;
   text-align: center;
-  font-weight: 100;
   padding-bottom: 50px;
+  font-weight: 100;
 }
 
-#thumbnail-title {
+.thumbnail-title {
   color: white;
   font-size: 16px;
   text-align: center;
 }
 
-#thumbnail-subtitle {
+.thumbnail-subtitle {
   color: white;
   font-size: 15px;
   text-align: center;
@@ -57,15 +61,11 @@ h2 {
 
 p {
   color: var(--blue-superdark);
-  font-size: 20px;
   text-align: left;
+  line-height: 2em;
+  padding: 0 0 1.5em;
 }
 
-#copyright {
-  color: white;
-  font-size: 14px;
-  text-align: center;
-}
 
 /* ===HEADER=== */
 
@@ -102,15 +102,15 @@ main h4 {
   margin-bottom: 36px;
   padding-top: 40px;
   text-align: center;
-  color: #ffffff;
+  color: white;
 }
 main button {
-  color: #051421;
+  color: var(--blue-superdark);
   font-size: 0.9em;
   line-height: 1em;
   margin-bottom: 0;
   padding: 20px 30px 18px 30px;
-  background-color: #81d4f1;
+  background-color: var(--blue-light);
   text-decoration: none;
   letter-spacing: 0.05em;
   text-align: center;
@@ -124,5 +124,38 @@ main button {
 /* ===FOOTER=== */
 
 footer {
-  background: var(--blue-medium);
+  background: var(--blue-light);
+}
+
+.about-section {
+  padding: 4rem 11rem 0;
+}
+
+footer a {
+  color: var(--blue-dark);
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: var(--blue-medium);
+}
+
+.social-media-section {
+  font-size: 2em;
+  text-align: center;
+  color: var(--blue-dark);
+  padding-bottom: 4rem;
+}
+
+.copyright-section {
+  width: 100%;
+  background: var(--blue-dark);
+  padding: 1rem;
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
 }
