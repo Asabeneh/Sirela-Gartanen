@@ -89,7 +89,6 @@ main {
   background-color: pink;
 }
 main h4 {
-  font-family: "AvenirNextLTPro-Medium", Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   line-height: 1.6em;
   margin-bottom: 36px;
@@ -97,8 +96,7 @@ main h4 {
   text-align: center;
   color: #ffffff;
 }
-main .button {
-  font-family: "AvenirNextLTPro-Medium", Helvetica, Arial, sans-serif;
+main button {
   color: #051421;
   font-size: 0.9em;
   line-height: 1em;
@@ -110,6 +108,7 @@ main .button {
   text-align: center;
   width: 250px;
   margin: auto;
+  display: block;
 }
 
 /* ===FOOTER=== */
