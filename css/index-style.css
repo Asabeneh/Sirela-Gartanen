@@ -18,6 +18,10 @@
   --blue-superdark: #020e13;
 }
 
+body {
+  background: var(--background-blue);
+}
+
 h1 {
   /* Sirela Gartanen */
   color: white;
@@ -63,3 +67,7 @@ main {
   height: 100%;
 }
 /* ===FOOTER=== */
+
+footer {
+  background: var(--blue-medium);
+}
