@@ -30,9 +30,9 @@ h1 {
   color: white;
   font-size: 80px;
   text-align: center;
-  font-family: "Open Sans Condensed", sans-serif;
+
   font-weight: 400;
-  margin-top: 50px;
+  margin-top: 250px;
 }
 
 h2 {
@@ -40,7 +40,7 @@ h2 {
   font-size: 64px;
   text-align: center;
   font-weight: 10;
-  font-family: "Open Sans Condensed", sans-serif;
+  padding-bottom: 50px;
 }
 
 #thumbnail-title {
