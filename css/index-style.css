@@ -1,59 +1,60 @@
 /* ===GENERAL=== */
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --thumbnail-green: #3c8328;
-    --thumbnail-yellow: #dda60f;
-    --thumbnail-indigo: #085a8a;
-    --thumbnail-orange: #d85f19;
-    --thumbnail-blue: #3AA2D9;
-    --thumbnail-turquoise: #23ac8c;
-    --background-blue: #082a3a;
-    --blue-light: #a4d2e6; /* for the links hover */
-    --blue-medium: #60b0d4; /* for footer, email button default, and h2*/
-    --blue-dark: #1c8fc2; /* for footer, social media icons default, and email button hover */
-    --blue-superdark: #020e13;
+  --thumbnail-green: #3c8328;
+  --thumbnail-yellow: #dda60f;
+  --thumbnail-indigo: #085a8a;
+  --thumbnail-orange: #d85f19;
+  --thumbnail-blue: #3aa2d9;
+  --thumbnail-turquoise: #23ac8c;
+  --background-blue: #082a3a;
+  --blue-light: #a4d2e6; /* for the links hover */
+  --blue-medium: #60b0d4; /* for footer, email button default, and h2*/
+  --blue-dark: #1c8fc2; /* for footer, social media icons default, and email button hover */
+  --blue-superdark: #020e13;
 }
 
-h1 { /* Sirela Gartanen */
-    color: white;
-    font-size: 80px;
-    text-align: center;
+h1 {
+  /* Sirela Gartanen */
+  color: white;
+  font-size: 80px;
+  text-align: center;
 }
 
 h2 {
-    color: var(--blue-medium);
-    font-size: 64px;
-    text-align: center;
+  color: var(--blue-medium);
+  font-size: 64px;
+  text-align: center;
+  font-weight: 100;
 }
 
 #thumbnail-title {
-    color: white;
-    font-size: 16px;
-    text-align: center;
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 
 #thumbnail-subtitle {
-    color: white;
-    font-size: 15px;
-    text-align: center;
+  color: white;
+  font-size: 15px;
+  text-align: center;
 }
 
 p {
-    color: var(--blue-superdark); 
-    font-size: 20px;
-    text-align: left;
+  color: var(--blue-superdark);
+  font-size: 20px;
+  text-align: left;
 }
 
 #copyright {
-    color: white; 
-    font-size: 14px;
-    text-align: center;
+  color: white;
+  font-size: 14px;
+  text-align: center;
 }
-
 
 /* ===HEADER=== */
 /* ===MAIN=== */
