@@ -1,15 +1,10 @@
 /* ===GENERAL=== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-* {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 :root {
@@ -19,7 +14,7 @@
   --thumbnail-orange: #d85f19;
   --thumbnail-blue: #3aa2d9;
   --thumbnail-turquoise: #23ac8c;
-  --background-blue: #082a3a;
+  --background-blue: rgb(8, 42, 58);
   --blue-light: #a4d2e6; /* for the links hover */
   --blue-medium: #60b0d4; /* for footer, email button default, and h2*/
   --blue-dark: #1c8fc2; /* for footer, social media icons default, and email button hover */
@@ -27,7 +22,10 @@
 }
 
 body {
-  background: var(--background-blue);
+  background-image: linear-gradient(rgba(8, 42, 58, 0.9), rgba(8, 42, 58, 0.9)),
+    url(../assets/images/background-rawpixel-600782-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -35,6 +33,7 @@ h1 {
   color: white;
   font-size: 80px;
   text-align: center;
+  padding-top: 200px;
 
   font-weight: 400;
   margin-top: 250px;
@@ -44,7 +43,7 @@ h2 {
   color: var(--blue-medium);
   font-size: 64px;
   text-align: center;
-  font-weight: 10;
+  font-weight: 100;
   padding-bottom: 50px;
 }
 
@@ -76,8 +75,9 @@ p {
 
 /* ===MAIN=== */
 main {
-  background: var(--background-blue);
   height: 100%;
+  /* background: var(--background-blue); */
+  opacity: 0.7;
 }
 .main-container {
   display: grid;
