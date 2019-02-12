@@ -90,25 +90,41 @@ p {
 
 
 /* ===MAIN=== */
-main {
-  height: 100%;
-}
+
 .main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 0 10%;
-  grid-gap: 20px;
-  width: 80%;
-  grid-template-areas:
-    "item1" "item2" "item3"
-    "item4" "item5" "item6";
+  grid-template-columns: repeat(3, 28vw);
+  grid-template-rows: repeat(2, 28vw);
+  margin: 0 6vw;
+  grid-gap: 2vw;
+  grid-auto-flow: row;
 }
 
-.photo-item {
-  width: 360px;
-  height: 360px;
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 42vw);
+  grid-template-rows: repeat(3, 42vw);
+  margin: 0 7vw;
+  grid-gap: 4vw;
+  grid-auto-flow: row;
 }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 80vw);
+    grid-template-rows: repeat(6, 80vw);
+    margin: 0 7vw;
+    grid-gap: 6vw;
+    grid-auto-flow: row;
+  }
+  
+  }
 
 img {
   height: 100%;
