@@ -1,0 +1,178 @@
+/* ===GENERAL=== */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+
+  --background-dark: #0c333eee;
+  --background-page: #2a5b1cee;
+  --background-page-opaque: #2a5b1c;
+
+  --page-light: #9dc193;
+  --page-medium: #4f8f3d;
+  --page-superdark: #0c1a08;
+}
+
+html {
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  /* background-attachment: fixed;
+  background-image: url(../assets/images/background-rawpixel-600782-unsplash.jpg);
+  background-size: cover;
+  background-position: center bottom; */
+
+  /* background-attachment: fixed;
+  background-image: url(../assets/images/samuel-zeller-699402-unsplash.jpg);
+  background-size: cover;
+  background-position: center top; */
+
+  background-attachment: fixed;
+  background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.background {
+  width: 100vw;
+}
+
+.background-dark {
+  background: var(--background-dark);
+}
+
+.background-page {
+  background: var(--background-page);
+}
+
+
+p {
+  color: white;
+  line-height: 2em;
+  padding: 0 0 1.5em;
+  text-align: left;
+}
+
+
+
+
+/* ===HEADER=== */
+
+.home-banner {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+.home-banner:hover {
+    background: var(--background-page-opaque);
+}
+
+.name {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+}
+
+.job {
+    color: var(--page-light);
+}
+
+
+h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+  padding: 1.2em 0 0.15em;
+  text-align: center;
+}
+
+h2 {
+  color: var(--page-light);
+  font-size: 64px;
+  font-weight: 100;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+
+
+
+/* ===MAIN=== */
+
+
+.contact {
+  padding: 4rem;
+}
+
+.contact p {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0 2em 1em;
+  text-align: center;
+}
+
+.contact button {
+  background-color: var(--page-light);
+  border: none;
+  color: var(--page-superdark);
+  cursor: pointer;
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.07em;
+  line-height: 1em;
+  margin: auto;
+  padding: 1.2em 0 1.2em;
+  text-align: center;
+  width: 250px;
+}
+
+.contact button:hover {
+  color: white;
+  background: var(--page-medium);
+  font-weight: 700;
+}
+
+
+/* ===FOOTER=== */
+
+.about-section {
+  padding: 4rem 11rem 0;
+}
+
+footer a {
+  color: var(--page-light);
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: var(--page-medium);
+}
+
+.social-media-section {
+  color: var(--page-light);
+  font-size: 2em;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.copyright-section {
+  padding: 1rem;
+  width: 100%;
+}
+
+.copyright {
+  color: white;
+  font-size: 14px;
+  padding: 0;
+  text-align: center;
+}

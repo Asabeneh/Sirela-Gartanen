@@ -9,14 +9,14 @@
 
 :root {
   --thumbnail-green: #3c8328cc;
-  --thumbnail-yellow: #dda60fcc;
+  --thumbnail-yellow: #d39205cc;
   --thumbnail-indigo: #085a8acc;
   --thumbnail-orange: #d85f19cc;
   --thumbnail-blue: #3aa2d9cc;
   --thumbnail-turquoise: #23ac8ccc;
 
   --thumbnail-text-green: #3c8328ee;
-  --thumbnail-text-yellow: #dda60fee;
+  --thumbnail-text-yellow: #d39205ee;
   --thumbnail-text-indigo: #085a8aee;
   --thumbnail-text-orange: #d85f19ee;
   --thumbnail-text-blue: #3aa2d9ee;
@@ -26,10 +26,10 @@
   --background-medium: #145568ee;
   --background-light: #7ecce2ee;
 
-  --blue-light: #7ecce2;
-  --blue-medium: #2499bb;
-  --blue-dark: #145568;
-  --blue-superdark: #041114;
+  --footer-light: #7ecce2;
+  --footer-medium: #2499bb;
+  --footer-dark: #145568;
+  --footer-superdark: #082229;
 }
 
 html {
@@ -43,10 +43,15 @@ body {
   background-size: cover;
   background-position: center bottom; */
 
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-image: url(../assets/images/samuel-zeller-699402-unsplash.jpg);
   background-size: cover;
-  background-position: center top;
+  background-position: center top; */
+
+  background-attachment: fixed;
+  background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
 
 }
 
@@ -67,7 +72,7 @@ body {
 }
 
 p {
-  color: var(--blue-superdark);
+  color: var(--footer-superdark);
   line-height: 2em;
   padding: 0 0 1.5em;
   text-align: left;
@@ -87,7 +92,7 @@ h1 {
 }
 
 h2 {
-  color: var(--blue-light);
+  color: var(--footer-light);
   font-size: 64px;
   font-weight: 100;
   padding-bottom: 80px;
@@ -238,9 +243,9 @@ img {
 }
 
 .contact button {
-  background-color: var(--blue-light);
+  background-color: var(--footer-light);
   border: none;
-  color: var(--blue-superdark);
+  color: var(--footer-superdark);
   cursor: pointer;
   display: block;
   font-size: 0.8rem;
@@ -254,7 +259,7 @@ img {
 
 .contact button:hover {
   color: white;
-  background: var(--blue-medium);
+  background: var(--footer-medium);
   font-weight: 700;
 }
 
@@ -266,16 +271,16 @@ img {
 }
 
 footer a {
-  color: var(--blue-dark);
+  color: var(--footer-dark);
   font-weight: 700;
 }
 
 footer a:hover {
-  color: var(--blue-medium);
+  color: var(--footer-medium);
 }
 
 .social-media-section {
-  color: var(--blue-dark);
+  color: var(--footer-dark);
   font-size: 2em;
   padding-bottom: 4rem;
   text-align: center;
