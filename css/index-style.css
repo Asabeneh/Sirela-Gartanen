@@ -8,12 +8,12 @@
 }
 
 :root {
-  --thumbnail-green: #3c8328;
-  --thumbnail-yellow: #dda60f;
-  --thumbnail-indigo: #085a8a;
-  --thumbnail-orange: #d85f19;
-  --thumbnail-blue: #3aa2d9;
-  --thumbnail-turquoise: #23ac8c;
+  --thumbnail-green: #3c8328e6;
+  --thumbnail-yellow: #dda60fe6;
+  --thumbnail-indigo: #085a8ae6;
+  --thumbnail-orange: #d85f19e6;
+  --thumbnail-blue: #3aa2d9e6;
+  --thumbnail-turquoise: #23ac8ce6;
   --background-dark: #0c333ee6;
   --background-medium: #145568e6;
   --background-light: #7ecce2e6;
@@ -67,14 +67,20 @@ h2 {
 
 .thumbnail-title {
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 1em 0 0 0;
 }
 
 .thumbnail-subtitle {
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0 0 1em 0;
 }
 
 p {
@@ -84,10 +90,7 @@ p {
   padding: 0 0 1.5em;
 }
 
-
 /* ===HEADER=== */
-
-
 
 /* ===MAIN=== */
 
@@ -99,22 +102,58 @@ p {
   grid-gap: 2vw;
   grid-auto-flow: row;
 }
-
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-
-.main-container {
-  display: grid;
-  grid-template-columns: repeat(2, 42vw);
-  grid-template-rows: repeat(3, 42vw);
-  margin: 0 7vw;
-  grid-gap: 4vw;
-  grid-auto-flow: row;
+.photo-item {
+  position: relative;
+  margin-bottom: 0;
 }
 
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.content1 {
+  background: var(--thumbnail-green);
+}
+
+.content2 {
+  background: var(--thumbnail-yellow);
+}
+
+.content3 {
+  background: var(--thumbnail-indigo);
+}
+
+.content4 {
+  background: var(--thumbnail-orange);
+}
+
+.content5 {
+  background: var(--thumbnail-blue);
+}
+
+.content6 {
+  background: var(--thumbnail-turquoise);
+}
+.color-text {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 42vw);
+    grid-template-rows: repeat(3, 42vw);
+    margin: 0 7vw;
+    grid-gap: 4vw;
+    grid-auto-flow: row;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
   .main-container {
     display: grid;
     grid-template-columns: repeat(1, 80vw);
@@ -123,8 +162,7 @@ p {
     grid-gap: 6vw;
     grid-auto-flow: row;
   }
-  
-  }
+}
 
 img {
   height: 100%;
@@ -159,7 +197,6 @@ main button {
 
 .about-section {
   padding: 4rem 11rem 0;
-
 }
 
 footer a {
