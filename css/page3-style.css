@@ -9,12 +9,13 @@
 
 :root {
   --background-dark: #0c333eee;
-  --background-page: #085a8aee;
-  --background-page-opaque: #085a8a;
+  --background-page: #206a95ee;
+  --background-page-opaque: #206a95;
 
-  --page-light: #83acc4;
-  --page-medium: #206a95;
-  --page-superdark: #01121b;
+  --page-superlight: #cddee7;
+  --page-light: #9cbdd0;
+  --page-medium: #528bad;
+  --page-superdark: #021b29;
 }
 
 html {
@@ -77,7 +78,7 @@ p {
 }
 
 .job {
-  color: var(--page-light);
+  color: var(--page-superlight);
 }
 
 h1 {
@@ -97,17 +98,14 @@ h2 {
   text-align: center;
 }
 
-header {
-}
+
 .header-image {
   margin: 0 15vw;
   width: 70vw;
 }
 
 /* ===MAIN=== */
-.background-page {
-  /* width: 100%; */
-}
+
 .discription {
   margin: 0 15vw;
   width: 70vw;
@@ -136,7 +134,6 @@ header {
 button {
   background-color: var(--page-light);
   border: none;
-  color: var(--page-superdark);
   cursor: pointer;
   display: block;
   font-size: 0.8rem;
@@ -149,9 +146,16 @@ button {
 }
 
 button:hover {
-  color: white;
   background: var(--page-medium);
   font-weight: 700;
+}
+
+button a {
+  color: var(--page-superdark);
+}
+
+button a:hover {
+  color: white;
 }
 
 /* ===FOOTER=== */
@@ -182,7 +186,7 @@ footer a:hover {
 }
 
 .copyright {
-  color: white;
+  color: var(--page-superdark);
   font-size: 14px;
   padding: 0;
   text-align: center;

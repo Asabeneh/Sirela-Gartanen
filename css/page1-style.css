@@ -9,12 +9,13 @@
 
 :root {
   --background-dark: #0c333eee;
-  --background-page: #2a5b1cee;
-  --background-page-opaque: #2a5b1c;
+  --background-page: #4f903dee;
+  --background-page-opaque: #4f903d;
 
-  --page-light: #9dc193;
-  --page-medium: #4f8f3d;
-  --page-superdark: #0c1a08;
+  --page-superlight: #d8e6d4;
+  --page-light: #b1cda9;
+  --page-medium: #76a868;
+  --page-superdark: #12270c;
 }
 
 html {
@@ -77,7 +78,7 @@ p {
 }
 
 .job {
-  color: var(--page-light);
+  color: var(--page-superlight);
 }
 
 h1 {
@@ -99,6 +100,9 @@ h2 {
 
 /* ===MAIN=== */
 
+main p {
+  color: var(--page-superdark);
+}
 .contact {
   padding: 4rem;
 }
@@ -130,6 +134,15 @@ button:hover {
   background: var(--page-medium);
   font-weight: 700;
 }
+
+button a {
+  color: var(--page-superdark);
+}
+
+button a:hover {
+  color: white;
+}
+
 
 /* ===FOOTER=== */
 

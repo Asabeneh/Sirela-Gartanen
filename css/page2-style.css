@@ -9,12 +9,13 @@
 
 :root {
   --background-dark: #0c333eee;
-  --background-page: #d39205ee;
-  --background-page-opaque: #d39205;
+  --background-page: #d79c1dee;
+  --background-page-opaque: #d79c1d;
 
-  --page-light: #e9c882;
-  --page-medium: #d79c1d;
-  --page-superdark: #2a1d01;
+  --page-superlight: #f6e9cd;
+  --page-light: #edd39b;
+  --page-medium: #e0b250;
+  --page-superdark: #3f2b01;
 }
 
 html {
@@ -77,7 +78,7 @@ p {
 }
 
 .job {
-  color: var(--page-light);
+  color: var(--page-superlight);
 }
 
 h1 {
@@ -107,6 +108,10 @@ h2 {
 
 main {
   padding: 3em 200px;
+}
+
+main p {
+  color: var(--page-superdark);
 }
 
 .description-thumbnails {
@@ -157,18 +162,19 @@ button {
   width: 250px;
 }
 
-button a {
-  color: var(--page-superdark);
-}
-
 button:hover {
   background: var(--page-medium);
   font-weight: 700;
 }
 
 button a {
+  color: var(--page-superdark);
+}
+
+button a:hover {
   color: white;
 }
+
 
 /* ===FOOTER=== */
 
@@ -198,7 +204,7 @@ footer a:hover {
 }
 
 .copyright {
-  color: white;
+  color: var(--page-superdark);
   font-size: 14px;
   padding: 0;
   text-align: center;
