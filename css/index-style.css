@@ -8,14 +8,14 @@
 }
 
 :root {
-  --thumbnail-green: #3c8328cc;
+  --thumbnail-green: #3c8428cc;
   --thumbnail-yellow: #d39205cc;
   --thumbnail-indigo: #085a8acc;
   --thumbnail-orange: #d85f19cc;
   --thumbnail-blue: #3aa2d9cc;
   --thumbnail-turquoise: #23ac8ccc;
 
-  --thumbnail-text-green: #3c8328ee;
+  --thumbnail-text-green: #3c8428ee;
   --thumbnail-text-yellow: #d39205ee;
   --thumbnail-text-indigo: #085a8aee;
   --thumbnail-text-orange: #d85f19ee;
@@ -33,7 +33,7 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -53,10 +53,6 @@ body {
   background-size: cover;
   background-position: center center;
 
-}
-
-.background {
-  width: 100vw;
 }
 
 .background-dark {
@@ -87,15 +83,17 @@ h1 {
   color: white;
   font-size: 80px;
   font-weight: 500;
-  padding: 1.2em 0 0.15em;
+  margin: 0 0.5em;
+  padding: 2em 0 0.15em;
   text-align: center;
 }
 
 h2 {
   color: var(--footer-light);
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 100;
-  padding-bottom: 80px;
+  margin: 0 0.5em;
+  padding: 0 0 1.5em;
   text-align: center;
 }
 
@@ -111,28 +109,6 @@ h2 {
   grid-template-columns: repeat(3, 28vw);
   grid-template-rows: repeat(2, 28vw);
   margin: 0 5.5vw;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  .main-grid {
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: 4vw;
-    grid-template-columns: repeat(2, 42vw);
-    grid-template-rows: repeat(3, 42vw);
-    margin: 0 5.5vw;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .main-grid {
-    display: grid;
-    grid-auto-flow: row;
-    grid-gap: 6vw;
-    grid-template-columns: repeat(1, 86vw);
-    grid-template-rows: repeat(6, 86vw);
-    margin: 0 5.5vw;
-  }
 }
 
 img {
@@ -236,7 +212,6 @@ img {
 
 .contact p {
   color: white;
-  font-size: 24px;
   font-weight: 400;
   padding: 0 2em 1em;
   text-align: center;
@@ -267,7 +242,7 @@ img {
 /* ===FOOTER=== */
 
 .about-section {
-  padding: 4rem 11rem 0;
+  padding: 3em 200px 0;
 }
 
 footer a {
@@ -280,7 +255,6 @@ footer a:hover {
 }
 
 .social-media-section {
-  color: var(--footer-dark);
   font-size: 2em;
   padding-bottom: 4rem;
   text-align: center;
@@ -296,4 +270,61 @@ footer a:hover {
   font-size: 14px;
   padding: 0;
   text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .main-grid {
+    grid-gap: 4vw;
+    grid-template-columns: repeat(2, 42vw);
+    grid-template-rows: repeat(3, 42vw);
+  }
+
+  html{
+    font-size: calc(18px + (24 - 18)*(100vw - 600px)/(900 - 600));
+  }
+
+  .about-section {
+    padding: 3em calc(20px + (200 - 25)*(100vw - 600px)/(900 - 600)) 0;
+  }
+
+  h1 {
+    font-size: calc(40px + (80 - 40)*(100vw - 600px)/(900 - 600));
+  }
+  
+  h2 {
+    font-size: calc(30px + (60 - 30)*(100vw - 600px)/(900 - 600));
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .main-grid {
+    grid-gap: 6vw;
+    grid-template-columns: repeat(1, 86vw);
+    grid-template-rows: repeat(6, 86vw);
+    margin: 0 25px;
+  }
+
+  html {
+    font-size: 18px; 
+  }
+
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 2em 0 0.15em;
+  }
+  
+  h2 {
+    font-size: 30px;
+    padding-bottom: 1.5em;
+  }
 }

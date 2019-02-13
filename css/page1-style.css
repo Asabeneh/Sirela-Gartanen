@@ -19,7 +19,7 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -91,15 +91,16 @@ h1 {
   color: white;
   font-size: 80px;
   font-weight: 500;
-  padding: 1.2em 0 0.15em;
+  margin: 0 0.5em;
+  padding: 2em 0 0.15em;
   text-align: center;
 }
 
 h2 {
   color: var(--page-light);
-  font-size: 64px;
-  font-weight: 100;
-  padding-bottom: 80px;
+  font-size: 60px;
+  margin: 0 0.5em;
+  padding: 0 0 1.5em;
   text-align: center;
 }
 
@@ -115,7 +116,6 @@ h2 {
 
 .contact p {
   color: white;
-  font-size: 24px;
   font-weight: 400;
   padding: 0 2em 1em;
   text-align: center;
@@ -146,7 +146,7 @@ h2 {
 /* ===FOOTER=== */
 
 .about-section {
-  padding: 4rem 11rem 0;
+  padding: 3em 200px 0;
 }
 
 footer a {
@@ -175,4 +175,50 @@ footer a:hover {
   font-size: 14px;
   padding: 0;
   text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+
+  html{
+    font-size: calc(18px + (24 - 18)*(100vw - 600px)/(900 - 600));
+  }
+
+  .about-section {
+    padding: 3em calc(20px + (200 - 25)*(100vw - 600px)/(900 - 600)) 0;
+  }
+
+  h1 {
+    font-size: calc(40px + (80 - 40)*(100vw - 600px)/(900 - 600));
+  }
+  
+  h2 {
+    font-size: calc(30px + (60 - 30)*(100vw - 600px)/(900 - 600));
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  html {
+    font-size: 18px; 
+  }
+
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 2em 0 0.15em;
+  }
+  
+  h2 {
+    font-size: 30px;
+    padding-bottom: 1.5em;
+  }
 }
