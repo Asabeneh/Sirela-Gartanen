@@ -8,7 +8,6 @@
 }
 
 :root {
-
   --background-dark: #0c333eee;
   --background-page: #2a5b1cee;
   --background-page-opaque: #2a5b1c;
@@ -38,7 +37,6 @@ body {
   background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
   background-size: cover;
   background-position: center center;
-
 }
 
 .background {
@@ -53,7 +51,6 @@ body {
   background: var(--background-page);
 }
 
-
 p {
   color: white;
   line-height: 2em;
@@ -61,31 +58,27 @@ p {
   text-align: left;
 }
 
-
-
-
 /* ===HEADER=== */
 
 .home-banner {
-    display: block;
-    text-align: center;
-    padding: 1rem;
+  display: block;
+  text-align: center;
+  padding: 1rem;
 }
 
 .home-banner:hover {
-    background: var(--background-page-opaque);
+  background: var(--background-page-opaque);
 }
 
 .name {
-    color: white;
-    font-weight: 700;
-    letter-spacing: 0.07em;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.07em;
 }
 
 .job {
-    color: var(--page-light);
+  color: var(--page-light);
 }
-
 
 h1 {
   color: white;
@@ -104,11 +97,7 @@ h2 {
   text-align: center;
 }
 
-
-
-
 /* ===MAIN=== */
-
 
 .contact {
   padding: 4rem;
@@ -121,7 +110,7 @@ h2 {
   text-align: center;
 }
 
-.contact button {
+button {
   background-color: var(--page-light);
   border: none;
   color: var(--page-superdark);
@@ -136,12 +125,11 @@ h2 {
   width: 250px;
 }
 
-.contact button:hover {
+button:hover {
   color: white;
   background: var(--page-medium);
   font-weight: 700;
 }
-
 
 /* ===FOOTER=== */
 
@@ -177,35 +165,29 @@ footer a:hover {
   text-align: center;
 }
 
-
-
 /* MEDIA QUERIES */
 
-
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-
-  html{
-    font-size: calc(18px + (24 - 18)*(100vw - 600px)/(900 - 600));
+  html {
+    font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
   }
 
   .about-section {
-    padding: 3em calc(20px + (200 - 25)*(100vw - 600px)/(900 - 600)) 0;
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
   }
 
   h1 {
-    font-size: calc(40px + (80 - 40)*(100vw - 600px)/(900 - 600));
-  }
-  
-  h2 {
-    font-size: calc(30px + (60 - 30)*(100vw - 600px)/(900 - 600));
+    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
   }
 
+  h2 {
+    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
   html {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   .about-section {
@@ -216,7 +198,7 @@ footer a:hover {
     font-size: 40px;
     padding: 2em 0 0.15em;
   }
-  
+
   h2 {
     font-size: 30px;
     padding-bottom: 1.5em;
