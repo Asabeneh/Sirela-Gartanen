@@ -8,7 +8,7 @@
 }
   
 :root {
-    --background-dark: #0c333eee;
+    --background-dark: #213338ee;
     --background-page: #4dabdcee;
     --background-page-opaque: #4dabdc;
   
@@ -115,7 +115,7 @@ main p {
     text-align: center;
 }
   
-button {
+.button {
     background-color: var(--page-light);
     border: none;
     color: var(--page-superdark);
@@ -130,7 +130,7 @@ button {
     width: 250px;
 }
   
-button:hover {
+.button:hover {
     color: white;
     background: var(--page-medium);
     font-weight: 700;

@@ -217,7 +217,7 @@ img {
   text-align: center;
 }
 
-.contact button {
+.button {
   background-color: var(--footer-light);
   border: none;
   color: var(--footer-superdark);
@@ -232,7 +232,7 @@ img {
   width: 250px;
 }
 
-.contact button:hover {
+.button:hover {
   color: white;
   background: var(--footer-medium);
   font-weight: 700;

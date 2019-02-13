@@ -8,7 +8,7 @@
 }
   
 :root {
-    --background-dark: #0c333eee;
+    --background-dark: #213338ee;
     --background-page: #db6f2fee;
     --background-page-opaque: #db6f2f;
   
@@ -115,7 +115,7 @@ color: var(--page-superdark);
     text-align: center;
 }
   
-button {
+.button {
     background-color: var(--page-light);
     border: none;
     color: var(--page-superdark);
@@ -128,13 +128,13 @@ button {
     padding: 1.2em 0 1.2em;
     text-align: center;
     width: 250px;
-}
+  }
   
-button:hover {
+  .button:hover {
     color: white;
     background: var(--page-medium);
     font-weight: 700;
-}
+  }
   
   /* ===FOOTER=== */
   
