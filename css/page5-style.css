@@ -101,7 +101,7 @@ h2 {
   /* ===MAIN=== */
   
 main p {
-    color: var(--page-superdark);
+color: var(--page-superdark);
 }
 
 .contact {
@@ -128,12 +128,16 @@ main p {
     padding: 1.2em 0 1.2em;
     text-align: center;
     width: 250px;
-}
+  }
   
-.button:hover {
+  .button:hover {
     color: white;
     background: var(--page-medium);
     font-weight: 700;
+  }
+
+main {
+  padding: 3em 200px 2em;
 }
   
   /* ===FOOTER=== */
@@ -180,6 +184,10 @@ footer a:hover {
     .about-section {
       padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
     }
+
+    .about-section {
+      padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+    }
   
     h1 {
       font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
@@ -197,6 +205,10 @@ footer a:hover {
   
     .about-section {
       padding: 3em 25px 0;
+    }
+
+    main {
+      padding: 3em 25px 2em;
     }
   
     h1 {
