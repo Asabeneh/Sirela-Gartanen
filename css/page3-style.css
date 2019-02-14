@@ -98,27 +98,35 @@ h2 {
   text-align: center;
 }
 
-
 .header-image {
   margin: 0 15vw;
   width: 70vw;
 }
 
+img {
+  width: 100%;
+}
+
 /* ===MAIN=== */
 
-.discription {
-  margin: 0 15vw;
-  width: 70vw;
-  text-align: center;
-  padding: 2em 0;
+main p {
+  color: var(--page-superdark);
 }
+
 .image {
-  margin: 0 15vw;
+  /* margin: 0 15vw; */
   width: 70vw;
 }
 .ocean-link {
-  margin: 0 15vw;
-  width: 70vw;
+  /* margin: 0 15vw;
+  width: 70vw; */
+  padding: 2em 0;
+}
+.ocean-org-link {
+  color: var(--page-light);
+}
+.ocean-org-link:hover {
+  color: var(--page-medium);
 }
 .contact {
   padding: 4rem;
@@ -140,7 +148,7 @@ h2 {
   font-size: 0.8rem;
   letter-spacing: 0.07em;
   line-height: 1em;
-  margin: auto;
+  margin: 2em auto 0;
   padding: 1.2em 0 1.2em;
   text-align: center;
   width: 250px;
@@ -150,6 +158,10 @@ h2 {
   color: white;
   background: var(--page-medium);
   font-weight: 700;
+}
+
+main {
+  padding: 3em 200px 2em;
 }
 
 /* ===FOOTER=== */
@@ -197,6 +209,10 @@ footer a:hover {
     padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
   }
 
+  main {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+  }
+
   h1 {
     font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
   }
@@ -213,6 +229,10 @@ footer a:hover {
 
   .about-section {
     padding: 3em 25px 0;
+  }
+
+  main {
+    padding: 3em 25px 2em;
   }
 
   h1 {
