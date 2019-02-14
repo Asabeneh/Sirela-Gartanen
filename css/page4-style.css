@@ -1,43 +1,33 @@
 /* ===GENERAL=== */
 * {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
   
 :root {
-    --background-dark: #213338ee;
-    --background-page: #db6f2fee;
-    --background-page-opaque: #db6f2f;
-  
-    --page-superlight: #f7dfd1;
-    --page-light: #efbfa3;
-    --page-medium: #e38f5e;
-    --page-superdark: #401c07;
+  --background-dark: #213338ee;
+  --background-page: #db6f2fee;
+  --background-page-opaque: #db6f2f;
+
+  --page-superlight: #f7dfd1;
+  --page-light: #efbfa3;
+  --page-medium: #e38f5e;
+  --page-superdark: #401c07;
 }
   
 html {
-    font-size: 24px;
-    -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
 }
   
 body {
-    /* background-attachment: fixed;
-    background-image: url(../assets/images/background-rawpixel-600782-unsplash.jpg);
-    background-size: cover;
-    background-position: center bottom; */
-  
-    /* background-attachment: fixed;
-    background-image: url(../assets/images/samuel-zeller-699402-unsplash.jpg);
-    background-size: cover;
-    background-position: center top; */
-  
-    background-attachment: fixed;
-    background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
-    background-size: cover;
-    background-position: center center;
+  background-attachment: fixed;
+  background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
 }
   
 .background {
@@ -45,180 +35,179 @@ body {
 }
   
 .background-dark {
-    background: var(--background-dark);
+  background: var(--background-dark);
 }
   
 .background-page {
-    background: var(--background-page);
+  background: var(--background-page);
 }
   
 p {
-    color: white;
-    line-height: 2em;
-    padding: 0 0 1.5em;
-    text-align: left;
+  color: white;
+  line-height: 2em;
+  padding: 0 0 1.5em;
+  text-align: left;
 }
   
   /* ===HEADER=== */
   
 .home-banner {
-    display: block;
-    text-align: center;
-    padding: 1rem;
+  display: block;
+  padding: 1rem;
+  text-align: center;
 }
   
 .home-banner:hover {
-    background: var(--background-page-opaque);
+  background: var(--background-page-opaque);
 }
-  
+
 .name {
-    color: white;
-    font-weight: 700;
-    letter-spacing: 0.07em;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.07em;
 }
   
 .job {
-    color: var(--page-superlight);
+  color: var(--page-superlight);
 }
-  
+
 h1 {
-    color: white;
-    font-size: 80px;
-    font-weight: 500;
-    margin: 0 0.5em;
-    padding: 2em 0 0.15em;
-    text-align: center;
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0 0.5em;
+  padding: 2em 0 0.15em;
+  text-align: center;
 }
-  
+
 h2 {
-    color: var(--page-light);
-    font-size: 60px;
-    margin: 0 0.5em;
-    padding: 0 0 1.5em;
-    text-align: center;
+  color: var(--page-light);
+  font-size: 60px;
+  margin: 0 0.5em;
+  padding: 0 0 1.5em;
+  text-align: center;
 }
-  
-  /* ===MAIN=== */
-  
+
+/* ===MAIN=== */
+
 main p {
 color: var(--page-superdark);
 }
 
 .contact {
-    padding: 4rem;
+  padding: 4rem;
 }
-  
+
 .contact p {
-    color: white;
-    font-weight: 400;
-    padding: 0 2em 1em;
-    text-align: center;
+  color: white;
+  font-weight: 400;
+  padding: 0 2em 1em;
+  text-align: center;
 }
-  
+
 .button {
-    background-color: var(--page-light);
-    border: none;
-    color: var(--page-superdark);
-    cursor: pointer;
-    display: block;
-    font-size: 0.8rem;
-    letter-spacing: 0.07em;
-    line-height: 1em;
-    margin: auto;
-    padding: 1.2em 0 1.2em;
-    text-align: center;
-    width: 250px;
-  }
-  
-  .button:hover {
-    color: white;
-    background: var(--page-medium);
-    font-weight: 700;
-  }
+  background-color: var(--page-light);
+  border: none;
+  color: var(--page-superdark);
+  cursor: pointer;
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.07em;
+  line-height: 1em;
+  margin: auto;
+  padding: 1.2em 0 1.2em;
+  text-align: center;
+  width: 250px;
+}
+
+.button:hover {
+  color: white;
+  background: var(--page-medium);
+  font-weight: 700;
+}
 
 main {
   padding: 3em 200px 2em;
 }
-  
-  /* ===FOOTER=== */
-  
+
+/* ===FOOTER=== */
+
 .about-section {
-    padding: 3em 200px 0;
+  padding: 3em 200px 0;
 }
-  
+
 footer a {
-    color: var(--page-light);
-    font-weight: 700;
+  color: var(--page-light);
+  font-weight: 700;
 }
-  
+
 footer a:hover {
-    color: var(--page-medium);
+  color: var(--page-medium);
 }
-  
+
 .social-media-section {
-    color: var(--page-light);
-    font-size: 2em;
-    padding-bottom: 4rem;
-    text-align: center;
+  color: var(--page-light);
+  font-size: 2em;
+  padding-bottom: 4rem;
+  text-align: center;
 }
-  
+
 .copyright-section {
-    padding: 1rem;
-    width: 100%;
+  padding: 1rem;
+  width: 100%;
 }
-  
+
 .copyright {
-    color: var(--page-superdark);
-    font-size: 14px;
-    padding: 0;
-    text-align: center;
+  color: var(--page-superdark);
+  font-size: 14px;
+  padding: 0;
+  text-align: center;
 }
-  
-  /* MEDIA QUERIES */
-  
+
+/* MEDIA QUERIES */
+
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-    html {
-      font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
-    }
-  
-    .about-section {
-      padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
-    }
+  html {
+    font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
+  }
 
-    .about-section {
-      padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
-    }
-  
-    h1 {
-      font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
-    }
-  
-    h2 {
-      font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
-    }
+  .about-section {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
+  }
+
+  .about-section {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+  }
+
+  h1 {
+    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
+  }
+
+  h2 {
+    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
+  }
 }
-  
+
 @media only screen and (max-width: 600px) {
-    html {
-      font-size: 18px;
-    }
-  
-    .about-section {
-      padding: 3em 25px 0;
-    }
+  html {
+    font-size: 18px;
+  }
 
-    main {
-      padding: 3em 25px 2em;
-    }
-  
-    h1 {
-      font-size: 40px;
-      padding: 2em 0 0.15em;
-    }
-  
-    h2 {
-      font-size: 30px;
-      padding-bottom: 1.5em;
-    }
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
+  main {
+    padding: 3em 25px 2em;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 2em 0 0.15em;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-bottom: 1.5em;
+  }
 }
-  

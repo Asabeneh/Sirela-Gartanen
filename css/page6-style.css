@@ -1,72 +1,62 @@
 /* ===GENERAL=== */
 * {
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
   
 :root {
-    --background-dark: #213338ee;
-    --background-page: #38b497ee;
-    --background-page-opaque: #38b497;
-  
-    --page-superlight: #d3eee8;
-    --page-light: #a7ddd1;
-    --page-medium: #65c4ae;
-    --page-superdark: #0a332a;
+  --background-dark: #213338ee;
+  --background-page: #db6f2fee;
+  --background-page-opaque: #db6f2f;
+
+  --page-superlight: #f7dfd1;
+  --page-light: #efbfa3;
+  --page-medium: #e38f5e;
+  --page-superdark: #401c07;
 }
   
 html {
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
 }
-
+  
 body {
-  /* background-attachment: fixed;
-  background-image: url(../assets/images/background-rawpixel-600782-unsplash.jpg);
-  background-size: cover;
-  background-position: center bottom; */
-
-  /* background-attachment: fixed;
-  background-image: url(../assets/images/samuel-zeller-699402-unsplash.jpg);
-  background-size: cover;
-  background-position: center top; */
-
   background-attachment: fixed;
   background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
   background-size: cover;
   background-position: center center;
 }
-
+  
 .background {
-  width: 100vw;
+    width: 100vw;
 }
-
+  
 .background-dark {
   background: var(--background-dark);
 }
-
+  
 .background-page {
   background: var(--background-page);
 }
-
+  
 p {
   color: white;
   line-height: 2em;
   padding: 0 0 1.5em;
   text-align: left;
 }
-
-/* ===HEADER=== */
-
+  
+  /* ===HEADER=== */
+  
 .home-banner {
   display: block;
-  text-align: center;
   padding: 1rem;
+  text-align: center;
 }
-
+  
 .home-banner:hover {
   background: var(--background-page-opaque);
 }
@@ -76,7 +66,7 @@ p {
   font-weight: 700;
   letter-spacing: 0.07em;
 }
-
+  
 .job {
   color: var(--page-superlight);
 }
@@ -137,7 +127,7 @@ color: var(--page-superdark);
 }
 
 main {
-padding: 3em 200px 2em;
+  padding: 3em 200px 2em;
 }
 
 /* ===FOOTER=== */
