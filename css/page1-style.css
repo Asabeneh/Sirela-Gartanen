@@ -24,20 +24,10 @@ html {
 }
 
 body {
-  /* background-attachment: fixed;
-  background-image: url(../assets/images/background-rawpixel-600782-unsplash.jpg);
-  background-size: cover;
-  background-position: center bottom; */
-
-  /* background-attachment: fixed;
-  background-image: url(../assets/images/samuel-zeller-699402-unsplash.jpg);
-  background-size: cover;
-  background-position: center top; */
-
   background-attachment: fixed;
   background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
-  background-size: cover;
   background-position: center center;
+  background-size: cover;
 }
 
 .background {
@@ -83,8 +73,8 @@ p {
 
 h1 {
   color: white;
-  font-size: 80px;
   font-weight: 500;
+  font-size: 80px;
   margin: 0 0.5em;
   padding: 2em 0 0.15em;
   text-align: center;
@@ -99,15 +89,15 @@ h2 {
 }
 
 .header-image {
-  width: 70vw;
   margin: 0 15vw;
   padding-bottom: 3vw;
+  width: 70vw;
 }
 
 /* ===MAIN=== */
 
 main p {
-color: var(--page-superdark);
+  color: var(--page-superdark);
 }
 
 .contact {
@@ -143,7 +133,7 @@ color: var(--page-superdark);
 }
 
 main {
-padding: 3em 200px 2em;
+  padding: 3em 200px 2em;
 }
 
 .main-image {
