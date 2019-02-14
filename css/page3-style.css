@@ -53,8 +53,8 @@ p {
 
 .home-banner {
   display: block;
-  text-align: center;
   padding: 1rem;
+  text-align: center;
 }
 
 .home-banner:hover {
@@ -106,7 +106,7 @@ main p {
 .image {
   width: 70vw;
 }
-.ocean-link {
+page3 .ocean-link {
   padding: 2em 0;
 }
 .ocean-org-link {
@@ -142,8 +142,8 @@ main p {
 }
 
 .button:hover {
-  color: white;
   background: var(--page-medium);
+  color: white;
   font-weight: 700;
 }
 
