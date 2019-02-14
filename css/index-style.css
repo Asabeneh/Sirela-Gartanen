@@ -8,6 +8,15 @@
 }
 
 :root {
+  --background-dark: #0c333eee;
+  --background-medium: #145568ee;
+  --background-light: #7ecce2ee;
+
+  --footer-light: #7ecce2;
+  --footer-medium: #2499bb;
+  --footer-dark: #145568;
+  --footer-superdark: #082229;
+
   --thumbnail-green: #3c8428cc;
   --thumbnail-yellow: #d39205cc;
   --thumbnail-indigo: #085a8acc;
@@ -21,15 +30,6 @@
   --thumbnail-text-orange: #d85f19ee;
   --thumbnail-text-blue: #3aa2d9ee;
   --thumbnail-text-turquoise: #23ac8cee;
-
-  --background-dark: #0c333eee;
-  --background-medium: #145568ee;
-  --background-light: #7ecce2ee;
-
-  --footer-light: #7ecce2;
-  --footer-medium: #2499bb;
-  --footer-dark: #145568;
-  --footer-superdark: #082229;
 }
 
 html {
@@ -38,21 +38,10 @@ html {
 }
 
 body {
-  /* background-attachment: fixed;
-  background-image: url(../assets/images/background-rawpixel-600782-unsplash.jpg);
-  background-size: cover;
-  background-position: center bottom; */
-
-  /* background-attachment: fixed;
-  background-image: url(../assets/images/samuel-zeller-699402-unsplash.jpg);
-  background-size: cover;
-  background-position: center top; */
-
   background-attachment: fixed;
   background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
-  background-size: cover;
   background-position: center center;
-
+  background-size: cover;
 }
 
 .background-dark {
@@ -74,9 +63,6 @@ p {
   text-align: left;
 }
 
-
-
-
 /* ===HEADER=== */
 
 h1 {
@@ -96,9 +82,6 @@ h2 {
   padding: 0 0 1.5em;
   text-align: center;
 }
-
-
-
 
 /* ===MAIN=== */
 
@@ -121,7 +104,7 @@ img {
 
 .thumbnail::before {
   bottom: 0;
-  content:"";
+  content: "";
   left: 0;
   position: absolute;
   right: 0;
@@ -152,9 +135,9 @@ img {
 .thumbnail-subtitle {
   color: white;
   font-size: 18px;
-  text-align: center;
   line-height: 1.5em;
   margin: 0 0 1em 0;
+  text-align: center;
   padding: 0;
 }
 
@@ -238,7 +221,6 @@ img {
   font-weight: 700;
 }
 
-
 /* ===FOOTER=== */
 
 .about-section {
@@ -272,10 +254,7 @@ footer a:hover {
   text-align: center;
 }
 
-
-
 /* MEDIA QUERIES */
-
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .main-grid {
@@ -284,22 +263,21 @@ footer a:hover {
     grid-template-rows: repeat(3, 42vw);
   }
 
-  html{
-    font-size: calc(18px + (24 - 18)*(100vw - 600px)/(900 - 600));
+  html {
+    font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
   }
 
   .about-section {
-    padding: 3em calc(20px + (200 - 25)*(100vw - 600px)/(900 - 600)) 0;
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
   }
 
   h1 {
-    font-size: calc(40px + (80 - 40)*(100vw - 600px)/(900 - 600));
-  }
-  
-  h2 {
-    font-size: calc(30px + (60 - 30)*(100vw - 600px)/(900 - 600));
+    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
   }
 
+  h2 {
+    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -311,7 +289,7 @@ footer a:hover {
   }
 
   html {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   .about-section {
@@ -322,7 +300,7 @@ footer a:hover {
     font-size: 40px;
     padding: 2em 0 0.15em;
   }
-  
+
   h2 {
     font-size: 30px;
     padding-bottom: 1.5em;

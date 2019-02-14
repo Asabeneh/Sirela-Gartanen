@@ -24,16 +24,6 @@ html {
 }
 
 body {
-  /* background-attachment: fixed;
-    background-image: url(../assets/images/background-rawpixel-600782-unsplash.jpg);
-    background-size: cover;
-    background-position: center bottom; */
-
-  /* background-attachment: fixed;
-    background-image: url(../assets/images/samuel-zeller-699402-unsplash.jpg);
-    background-size: cover;
-    background-position: center top; */
-
   background-attachment: fixed;
   background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
   background-size: cover;
@@ -63,8 +53,8 @@ p {
 
 .home-banner {
   display: block;
-  text-align: center;
   padding: 1rem;
+  text-align: center;
 }
 
 .home-banner:hover {
@@ -114,19 +104,16 @@ main p {
 }
 
 .image {
-  /* margin: 0 15vw; */
   width: 70vw;
 }
-.ocean-link {
-  /* margin: 0 15vw;
-  width: 70vw; */
+page3 .ocean-link {
   padding: 2em 0;
 }
 .ocean-org-link {
   color: var(--page-light);
 }
 .ocean-org-link:hover {
-  color: var(--page-medium);
+  color: var(--page-superlight);
 }
 .contact {
   padding: 4rem;
@@ -155,8 +142,8 @@ main p {
 }
 
 .button:hover {
-  color: white;
   background: var(--page-medium);
+  color: white;
   font-weight: 700;
 }
 
