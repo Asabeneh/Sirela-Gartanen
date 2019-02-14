@@ -1,0 +1,234 @@
+/* ===GENERAL=== */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --background-dark: #213338ee;
+  --background-page: #206a95ee;
+  --background-page-opaque: #206a95;
+
+  --page-superlight: #cddee7;
+  --page-light: #9cbdd0;
+  --page-medium: #528bad;
+  --page-superdark: #021b29;
+}
+
+html {
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-attachment: fixed;
+  background-image: url(../assets/images/grant-lemons-81205-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.background {
+  width: 100vw;
+}
+
+.background-dark {
+  background: var(--background-dark);
+}
+
+.background-page {
+  background: var(--background-page);
+}
+
+p {
+  color: white;
+  line-height: 2em;
+  padding: 0 0 1.5em;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  padding: 1em 0 2em;
+}
+
+/* ===HEADER=== */
+
+.home-banner {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+
+.home-banner:hover {
+  background: var(--background-page-opaque);
+}
+
+.name {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.job {
+  color: var(--page-superlight);
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0 0.5em;
+  padding: 2em 0 0.15em;
+  text-align: center;
+}
+
+h2 {
+  color: var(--page-light);
+  font-size: 60px;
+  margin: 0 0.5em;
+  padding: 0 0 1.5em;
+  text-align: center;
+}
+
+header img {
+  margin: 0 15vw;
+  padding-bottom: 3vw;
+  width: 70vw;
+}
+
+
+/* ===MAIN=== */
+
+main {
+  padding: 3em 200px 2em;
+}
+
+main p {
+  color: var(--page-superdark);
+}
+
+.image {
+  width: 70vw;
+}
+
+.ocean-link {
+  padding: 2em 0;
+}
+
+main a {
+  color: var(--page-light);
+}
+
+main a:hover {
+  color: var(--page-superlight);
+}
+
+.button {
+  background-color: var(--page-light);
+  border: none;
+  color: var(--page-superdark);
+  cursor: pointer;
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.07em;
+  line-height: 1em;
+  margin: 2em auto 0;
+  padding: 1.2em 0 1.2em;
+  text-align: center;
+  width: 250px;
+}
+
+.button:hover {
+  background: var(--page-medium);
+  color: white;
+  font-weight: 700;
+}
+
+
+/* ===FOOTER=== */
+
+.about-section {
+  padding: 3em 200px 0;
+}
+
+footer a {
+  color: var(--page-light);
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: var(--page-medium);
+}
+
+.social-media-section {
+  color: var(--page-light);
+  font-size: 2em;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.copyright-section {
+  padding: 1rem;
+  width: 100%;
+}
+
+.copyright {
+  color: var(--page-superdark);
+  font-size: 14px;
+  padding: 0;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  html {
+    font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
+  }
+
+  h1 {
+    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
+  }
+
+  h2 {
+    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
+  }
+
+  main {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+  }
+
+  .about-section {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 2em 0 0.15em;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-bottom: 1.5em;
+  }
+
+  main {
+    padding: 3em 25px 2em;
+  }
+
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
+}
