@@ -135,6 +135,10 @@ color: var(--page-superdark);
     background: var(--page-medium);
     font-weight: 700;
   }
+
+main {
+  padding: 3em 200px 2em;
+}
   
   /* ===FOOTER=== */
   
@@ -180,6 +184,10 @@ footer a:hover {
     .about-section {
       padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
     }
+
+    .about-section {
+      padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+    }
   
     h1 {
       font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
@@ -197,6 +205,10 @@ footer a:hover {
   
     .about-section {
       padding: 3em 25px 0;
+    }
+
+    main {
+      padding: 3em 25px 2em;
     }
   
     h1 {
