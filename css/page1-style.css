@@ -88,7 +88,7 @@ h2 {
   text-align: center;
 }
 
-.header-image {
+header img {
   margin: 0 15vw;
   padding-bottom: 3vw;
   width: 70vw;
@@ -100,15 +100,16 @@ main p {
   color: var(--page-superdark);
 }
 
-.contact {
-  padding: 4rem;
+main {
+  padding: 3em 200px 2em;
 }
 
-.contact p {
-  color: white;
-  font-weight: 400;
-  padding: 0 2em 1em;
-  text-align: center;
+.main-image {
+  width: 100%;
+}
+
+.mockup {
+  margin: -4.5em 0 -2.5em;
 }
 
 .button {
@@ -130,18 +131,6 @@ main p {
   color: white;
   background: var(--page-medium);
   font-weight: 700;
-}
-
-main {
-  padding: 3em 200px 2em;
-}
-
-.main-image {
-  width: 100%;
-}
-
-.mockup {
-  margin: -4.5em 0 -2.5em;
 }
 
 /* ===FOOTER=== */
@@ -185,6 +174,14 @@ footer a:hover {
     font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
   }
 
+  h1 {
+    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
+  }
+
+  h2 {
+    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
+  }
+
   .about-section {
     padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
   }
@@ -193,26 +190,11 @@ footer a:hover {
     padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
   }
 
-  h1 {
-    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
-  }
-
-  h2 {
-    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
-  }
 }
 
 @media only screen and (max-width: 600px) {
   html {
     font-size: 18px;
-  }
-
-  .about-section {
-    padding: 3em 25px 0;
-  }
-
-  main {
-    padding: 3em 25px 2em;
   }
 
   h1 {
@@ -224,4 +206,13 @@ footer a:hover {
     font-size: 30px;
     padding-bottom: 1.5em;
   }
+
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
+  main {
+    padding: 3em 25px 2em;
+  }
+
 }

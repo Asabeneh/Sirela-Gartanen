@@ -6,16 +6,16 @@
   padding: 0;
   text-decoration: none;
 }
-  
+
 :root {
   --background-dark: #213338ee;
-  --background-page: #db6f2fee;
-  --background-page-opaque: #db6f2f;
+  --background-page: #38b497ee;
+  --background-page-opaque: #38b497;
 
-  --page-superlight: #f7dfd1;
-  --page-light: #efbfa3;
-  --page-medium: #e38f5e;
-  --page-superdark: #401c07;
+  --page-superlight: #d3eee8;
+  --page-light: #a7ddd1;
+  --page-medium: #65c4ae;
+  --page-superdark: #0a332a;
 }
   
 html {
@@ -31,7 +31,7 @@ body {
 }
   
 .background {
-    width: 100vw;
+  width: 100vw;
 }
   
 .background-dark {
@@ -90,19 +90,12 @@ h2 {
 
 /* ===MAIN=== */
 
+main {
+  padding: 3em 200px 2em;
+}
+
 main p {
 color: var(--page-superdark);
-}
-
-.contact {
-  padding: 4rem;
-}
-
-.contact p {
-  color: white;
-  font-weight: 400;
-  padding: 0 2em 1em;
-  text-align: center;
 }
 
 .button {
@@ -126,9 +119,6 @@ color: var(--page-superdark);
   font-weight: 700;
 }
 
-main {
-  padding: 3em 200px 2em;
-}
 
 /* ===FOOTER=== */
 
@@ -171,6 +161,18 @@ footer a:hover {
     font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
   }
 
+  h1 {
+    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
+  }
+
+  h2 {
+    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
+  }
+
+  main {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+  }
+
   .about-section {
     padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
   }
@@ -179,22 +181,11 @@ footer a:hover {
     padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
   }
 
-  h1 {
-    font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
-  }
-
-  h2 {
-    font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
-  }
 }
 
 @media only screen and (max-width: 600px) {
   html {
     font-size: 18px;
-  }
-
-  .about-section {
-    padding: 3em 25px 0;
   }
 
   main {
@@ -210,4 +201,9 @@ footer a:hover {
     font-size: 30px;
     padding-bottom: 1.5em;
   }
+
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
 }

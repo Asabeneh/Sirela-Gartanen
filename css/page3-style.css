@@ -49,6 +49,11 @@ p {
   text-align: left;
 }
 
+img {
+  width: 100%;
+  padding: 1em 0 2em;
+}
+
 /* ===HEADER=== */
 
 .home-banner {
@@ -88,16 +93,18 @@ h2 {
   text-align: center;
 }
 
-.header-image {
+header img {
   margin: 0 15vw;
+  padding-bottom: 3vw;
   width: 70vw;
 }
 
-img {
-  width: 100%;
-}
 
 /* ===MAIN=== */
+
+main {
+  padding: 3em 200px 2em;
+}
 
 main p {
   color: var(--page-superdark);
@@ -106,24 +113,17 @@ main p {
 .image {
   width: 70vw;
 }
-page3 .ocean-link {
+
+.ocean-link {
   padding: 2em 0;
 }
-.ocean-org-link {
+
+main a {
   color: var(--page-light);
 }
-.ocean-org-link:hover {
-  color: var(--page-superlight);
-}
-.contact {
-  padding: 4rem;
-}
 
-.contact p {
-  color: white;
-  font-weight: 400;
-  padding: 0 2em 1em;
-  text-align: center;
+main a:hover {
+  color: var(--page-superlight);
 }
 
 .button {
@@ -147,9 +147,6 @@ page3 .ocean-link {
   font-weight: 700;
 }
 
-main {
-  padding: 3em 200px 2em;
-}
 
 /* ===FOOTER=== */
 
@@ -192,14 +189,6 @@ footer a:hover {
     font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
   }
 
-  .about-section {
-    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
-  }
-
-  main {
-    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
-  }
-
   h1 {
     font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
   }
@@ -207,19 +196,21 @@ footer a:hover {
   h2 {
     font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
   }
+
+  main {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+  }
+
+  .about-section {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
+  }
+
+
 }
 
 @media only screen and (max-width: 600px) {
   html {
     font-size: 18px;
-  }
-
-  .about-section {
-    padding: 3em 25px 0;
-  }
-
-  main {
-    padding: 3em 25px 2em;
   }
 
   h1 {
@@ -231,4 +222,13 @@ footer a:hover {
     font-size: 30px;
     padding-bottom: 1.5em;
   }
+
+  main {
+    padding: 3em 25px 2em;
+  }
+
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
 }

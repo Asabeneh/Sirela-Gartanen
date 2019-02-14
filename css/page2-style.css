@@ -88,23 +88,23 @@ h2 {
   text-align: center;
 }
 
-.header-image img {
-  margin: 0 20vw;
+header img {
+  margin: 0 15vw;
   padding-bottom: 3vw;
-  width: 60vw;
+  width: 70vw;
 }
 
 /* ===MAIN=== */
 
 main {
-  padding: 3em 500px;
+  padding: 3em 200px 2em;
 }
 
 main p {
   color: var(--page-superdark);
 }
 
-.description-thumbnails {
+.thumbnails {
   display: grid;
   grid-auto-flow: row;
   grid-gap: 2vw;
@@ -112,6 +112,7 @@ main p {
   grid-template-rows: 30vw;
   justify-content: stretch;
   justify-items: center;
+  margin-bottom: 2em;
 }
 
 .thumbnail img {
@@ -119,11 +120,8 @@ main p {
   width: 100%;
 }
 
-.main-down-text {
-  padding-top: 3em;
-}
-.main-down-image img {
-  margin: 30px 0;
+.main-bottom-image img {
+  margin: 1em 0 2em;
   width: 100%;
 }
 
@@ -165,10 +163,6 @@ main p {
   padding: 3em 200px 0;
 }
 
-main {
-  padding: 3em 200px 2em;
-}
-
 footer a {
   color: var(--page-light);
   font-weight: 700;
@@ -204,14 +198,6 @@ footer a:hover {
     font-size: calc(18px + (24 - 18) * (100vw - 600px) / (900 - 600));
   }
 
-  .about-section {
-    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
-  }
-
-  main {
-    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
-  }
-
   h1 {
     font-size: calc(40px + (80 - 40) * (100vw - 600px) / (900 - 600));
   }
@@ -219,19 +205,22 @@ footer a:hover {
   h2 {
     font-size: calc(30px + (60 - 30) * (100vw - 600px) / (900 - 600));
   }
+
+
+  main {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 2em;
+  }
+
+  .about-section {
+    padding: 3em calc(20px + (200 - 25) * (100vw - 600px) / (900 - 600)) 0;
+  }
+
+
 }
 
 @media only screen and (max-width: 600px) {
   html {
     font-size: 18px;
-  }
-
-  .about-section {
-    padding: 3em 25px 0;
-  }
-
-  main {
-    padding: 3em 25px 2em;
   }
 
   h1 {
@@ -243,4 +232,14 @@ footer a:hover {
     font-size: 30px;
     padding-bottom: 1.5em;
   }
+
+  main {
+    padding: 3em 25px 2em;
+  }
+
+  .about-section {
+    padding: 3em 25px 0;
+  }
+
+
 }
