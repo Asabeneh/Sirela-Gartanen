@@ -114,19 +114,17 @@ main p {
 }
 
 .image {
-  /* margin: 0 15vw; */
   width: 70vw;
 }
 .ocean-link {
-  /* margin: 0 15vw;
-  width: 70vw; */
+
   padding: 2em 0;
 }
 .ocean-org-link {
   color: var(--page-light);
 }
 .ocean-org-link:hover {
-  color: var(--page-medium);
+  color: var(--page-superlight);
 }
 .contact {
   padding: 4rem;
