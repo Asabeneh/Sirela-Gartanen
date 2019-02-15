@@ -4,11 +4,13 @@ We are practicing our collaboration skills by creating a website together. Our m
 
 ## Demo
 
+[View ](https://asabeneh.github.io/Sirela-Gartanen/)
+
 Coming soon.
 
 ## Authors
 
-- Mirela Viitanen 
+- Mirela Viitanen
 - Simon Maher
 - Xurxe Toivo García
 
